@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function Footer() {
     return (
-        <div className="github">
+        <div className="footer">
             <footer>
                 {" "}
                 <em>
