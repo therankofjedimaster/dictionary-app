@@ -16,7 +16,7 @@ export default function Results({ results }) {
 
     return (
         <div className="meaning">
-            <h2>Definition of {results.word}</h2>
+            <h2 className="text-center">Definition of {results.word}</h2>
             {renderMeanings()}
         </div>
     );
