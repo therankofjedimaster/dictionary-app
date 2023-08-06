@@ -1,44 +1,67 @@
 body {
-background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);font-family: 'Nunito Sans', sans-serif;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,252,252,1) 0%, rgb(198, 234, 241) 0%, rgba(217,244,250,1) 100%);
+flex-direction: column;
+font-family: 'Nunito Sans', sans-serif;
 font-family: 'Roboto Mono', monospace;
+margin:0;
 }
 
 header{
 display: flex;
 justify-content: center;
-text-align: center;
 margin: 5px 0px 0px 0px;
+text-align: center;
 }
 
 footer{
 display: flex;
-justify-content: center;
 font-size:12px;
+justify-content: center;
 }
 
 a{
+  color:black;
+}
+a:hover{
   color:#362999;
+  transition: all 150ms ease-in-out;
 }
 
 form{
 display: flex;
 justify-content: center;
-text-align: center;
 padding: 10px;
+text-align: center;
+}
+
+ul{
+  display:flex;
+  justify-content: space-evenly;
+  list-style: inside;
+  list-style-type: disc;
+  padding:0;
 }
 
 .button{
   border: black 2px solid;
   border-radius: 10px;
   margin: 0px 10px;
+  padding: 5px 10px;
 }
 .button:hover{
-  background: #bbe4e9;
+  background: #ffffff;
   color:#362999;
+  transition: all 150ms ease-in-out;
+  transform: scale(1.2);
 }
 
 .container{
   max-width: 100%;
+}
+.example{
+  font-size:15px;
+  opacity:0.8;
 }
 .page-content{
   display: flex;
@@ -46,9 +69,30 @@ padding: 10px;
   padding: 20px;
 }
 
-.meaning{
-  text-align: left;
-  border: 2px solid black;
+.meaning {
+  background-color: white;
+  border: 4px solid black;
   border-radius: 10px;
-  padding:10px;
+  box-shadow: 10px 10px #d6edf1;
+  box-sizing: border-box;
+  margin: 10px;
+  max-width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+.phonetics{
+  font-size:20px;
+}
+.titles{
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  ul{
+    flex-direction: column;
+    align-items:center;
+  }
+  .phonetics, .titles{
+    font-size:16px;
+  }
 }

@@ -8,7 +8,7 @@ export default function App() {
     <div className="container">
       <header>
         <h1>
-          Dictionary
+          Dictionary 📚
         </h1>
       </header>
       <Dictionary />

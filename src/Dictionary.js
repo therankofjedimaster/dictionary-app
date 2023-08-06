@@ -50,6 +50,7 @@ export default function Dictionary() {
                         <button className="button">Search!</button>
                     </form>
                     {""}
+                    <p className="text-center"> <em>What's on your mind?</em></p>
                 </div>
             </div>
         );
