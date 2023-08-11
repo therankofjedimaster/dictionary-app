@@ -19,17 +19,23 @@ export default function Results({ results }) {
         if (results.phonetics.length === 0) {
             return <div>No phonetics information found.</div>;
         }
-        return results.phonetics.map((phonetic, index) => (
-            <div key={index}>
-                <Phonetic phonetic={phonetic} />
-            </div>
-        ));
+        return results.phonetics.map((phonetic, index) => {
+            if (phonetic.audio) {
+                return (
+                    <div key={index}>
+                        <Phonetic phonetic={phonetic} />
+                    </div>
+                );
+            } else {
+                return null;
+            }
+        });
     }
 
     return (
         <div className="meaning">
 
-            <h2 className="text-center">Definition of {results.word} {renderPhonetics()}</h2>
+            <h2 className="text-center">Definition of <strong className="searchWord"> {results.word}</strong> {renderPhonetics()}</h2>
             {renderMeanings()}
         </div>
     );

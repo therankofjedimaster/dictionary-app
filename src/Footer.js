@@ -4,18 +4,24 @@ import "./index.css";
 export default function Footer() {
     return (
         <div className="container">
-            <footer>
+            <footer className="text-white">
                 {" "}
                 <em>
                     {" "}
-                    Open source code by Eugenia Zanarini available at{" "}
-                    <a
+                    Open source code by {" "}
+                    <a className="text-white"
+                        href="https://www.linkedin.com/in/eugenia-zanarini/"
+                        target="_blank"
+                        rel="noreferrer">
+                        Eugenia Zanarini
+                    </a>  available at{" "}
+                    <a className="text-white"
                         href="https://github.com/therankofjedimaster/dictionary-app"
                         target="_blank"
                         rel="noreferrer"
                     >
                         GitHub
-                    </a>
+                    </a>.
                 </em>
             </footer>
         </div>
