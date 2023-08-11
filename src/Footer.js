@@ -5,24 +5,25 @@ export default function Footer() {
     return (
         <div className="container">
             <footer className="text-white">
-                {" "}
-                <em>
+                <strong>
                     {" "}
-                    Open source code by {" "}
-                    <a className="text-white"
-                        href="https://www.linkedin.com/in/eugenia-zanarini/"
-                        target="_blank"
-                        rel="noreferrer">
-                        Eugenia Zanarini
-                    </a>  available at{" "}
-                    <a className="text-white"
-                        href="https://github.com/therankofjedimaster/dictionary-app"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        GitHub
-                    </a>.
-                </em>
+                    <em>
+                        {" "}
+                        Open source code by {" "}
+                        <a
+                            href="https://www.linkedin.com/in/eugenia-zanarini/"
+                            target="_blank"
+                            rel="noreferrer">
+                            Eugenia Zanarini
+                        </a>  available at{" "}
+                        <a
+                            href="https://github.com/therankofjedimaster/dictionary-app"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            GitHub
+                        </a>.
+                    </em></strong>
             </footer>
         </div>
     );

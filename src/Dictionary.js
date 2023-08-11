@@ -27,14 +27,14 @@ export default function Dictionary() {
     if (loaded) {
         return (
             <div className="page-content">
-                <div className="dictionary">
+                <div>
                     <form className="search" onSubmit={search}>
                         <input type="search" onChange={handleKeywordChange} /> {""}
                         <button className="button">Search!</button>
                     </form>
                     {""}
 
-                    <div className="results">
+                    <div>
                         <Results results={results} />
                     </div>
 
@@ -44,7 +44,7 @@ export default function Dictionary() {
     } else {
         return (
             <div className="page-content">
-                <div className="dictionary">
+                <div>
                     <form className="search" onSubmit={search}>
                         <input type="search" onChange={handleKeywordChange} /> {""}
                         <button className="button">Search!</button>

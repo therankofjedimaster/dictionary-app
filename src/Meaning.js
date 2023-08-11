@@ -7,7 +7,7 @@ export default function Meaning(props) {
     const firstExample = props.meaning.definitions[0].example;
 
     return (
-        <div className="container">
+        <div className="container shadow-sm">
             <p className="titles"><strong>{props.meaning.partOfSpeech}</strong></p>
             <p>{props.meaning.partOfSpeech.definition}</p>
             <div>

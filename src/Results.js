@@ -33,7 +33,7 @@ export default function Results({ results }) {
     }
 
     return (
-        <div className="meaning">
+        <div className="results">
 
             <h2 className="text-center">Definition of <strong className="searchWord"> {results.word}</strong> {renderPhonetics()}</h2>
             {renderMeanings()}

@@ -1,6 +1,4 @@
 body {
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,252,252,1) 0%, rgb(198, 234, 241) 0%, rgba(217,244,250,1) 100%);
 flex-direction: column;
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Roboto Mono', monospace;
@@ -10,7 +8,6 @@ margin:0;
 header{
 display: flex;
 justify-content: center;
-margin: 5px 0px 0px 0px;
 text-align: center;
 color:white;
  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -28,6 +25,15 @@ a{
 a:hover{
   color:#362999;
   transition: all 150ms ease-in-out;
+}
+
+footer a{
+  color:white;
+}
+footer a:hover{
+  color:#362999;
+  transition: all 150ms ease-in-out;
+  transform: scale(1.5);
 }
 
 form{
@@ -60,10 +66,20 @@ ul{
 
 .container{
   max-width: 100%;
-  background-size:cover;
-  background-repeat: no-repeat;
 }
 
+.bg {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
 
 .example{
   font-size:15px;
@@ -75,8 +91,8 @@ ul{
   padding: 20px;
 }
 
-.meaning {
-  background-color: white;
+.results{
+   background-color: white;
   border: 4px solid black;
   border-radius: 10px;
   box-sizing: border-box;
@@ -102,5 +118,9 @@ ul{
   }
   .phonetics, .titles{
     font-size:16px;
+  }
+  .results {
+    margin: 5px;
+    padding: 5px;
   }
 }
